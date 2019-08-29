@@ -33,7 +33,7 @@ With new React app in place, we are able to view it in the browser by running
  
 After creating a new React project we are ready to start a initialize amplify in our project, and we can do this by running `amplify init` in the root directory of our application.    
     
-![image - aws-account-verify 7](images/aws-account-verify 7.PNG)    
+![image - aws-account-verify 7](images/aws-account-verify-7.PNG)    
   
 And by setting the application with the above details in the default browser we are asked to log into aws console account. After logging in we have to get back to the command line tool and hit `Enter key`  
 
@@ -41,35 +41,35 @@ And by setting the application with the above details in the default browser we 
   
 And we are asked to choose the region and username to be used  
     
-![image - aws-account-verify 8](images/aws-account-verify 8.PNG)    
+![image - aws-account-verify 8](images/aws-account-verify-8.PNG)    
   
 We are then asked to press `Enter key` and this will open in  the default browser a page to create the user.  
     
-![image - aws-account-verify 2](images/aws-account-verify 2.PNG)    
+![image - aws-account-verify 2](images/aws-account-verify-2.PNG)    
   
 Without changing the configuration, let's click `Next: Permissions`
 
-![image - aws-account-verify 3](images/aws-account-verify 3.PNG)    
+![image - aws-account-verify 3](images/aws-account-verify-3.PNG)    
   
 and  `Next: Tags`  
 
-![image - aws-account-verify 4](images/aws-account-verify 4.PNG)    
+![image - aws-account-verify 4](images/aws-account-verify-4.PNG)    
   
 and  `Next: Review`  
 
-![image - aws-account-verify 5](images/aws-account-verify 5.PNG)    
+![image - aws-account-verify 5](images/aws-account-verify-5.PNG)    
   
 And the we hit `Create user` for creating a new user.  
     
-![image - aws-account-verify 6](images/aws-account-verify 6.PNG)    
+![image - aws-account-verify 6](images/aws-account-verify-6.PNG)    
   
 After a page with user `Access Key ID` and `Secret access key` shows up, and from there we can copy them and use them in our command line.  
     
-![image - aws-account-verify 9](images/aws-account-verify 9.PNG)    
+![image - aws-account-verify 9](images/aws-account-verify-9.PNG)    
   
 After pasting these details we let the profile name to `default` and hit `Enter` and wait for a while and let the app to be created.  
     
-![image - aws-account-verify 10](images/aws-account-verify 10.PNG)  
+![image - aws-account-verify 10](images/aws-account-verify-10.PNG)  
   
 After that the amplify is all set and ready to be used in the application.  
   
@@ -120,7 +120,7 @@ From these form, the user should be able to create an account, and login to acce
   
 ![image - signup-page](images/signup-page.PNG)  
   
-![image - signup-page2](images/signup-page2.PNG)  
+![image - signup-page2](images/signup-page-2.PNG)  
   
 ![image - signin-page](images/signin-page.PNG)  
   
