@@ -75,7 +75,7 @@ After that the amplify is all set and ready to be used in the application.
   
 After all these steps, a folder named `amplify` is generated in the root folder of our app, and a some configuration are auto-generated in `src/aws-exports.js`  
   
-***NB:** After setting up amplify in our project, the default region and default user details are stored in 2 files `config` and `credentials` located in `C:\Users\[User]\.aws` folder in for Windows users. This will skip the new user creation and set up the region, next time when another amplify project will be created.*  
+***NB:** After setting up amplify in our project, the default region and default user details are stored in 2 files `config` and `credentials` located in `C:/Users/[User]/.aws` folder in for Windows users. This will skip the new user creation and set up the region, next time when another amplify project will be created.*  
   
 **Step 4: Set React app to use AWS auth** 
   
