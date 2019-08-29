@@ -120,7 +120,7 @@ From these form, the user should be able to create an account, and login to acce
   
 ![image - signup-page](images/signup-page.PNG)  
   
-![image - signup-page 2](images/signup-page 2.PNG)  
+![image - signup-page2](images/signup-page2.PNG)  
   
 ![image - signin-page](images/signin-page.PNG)  
   
