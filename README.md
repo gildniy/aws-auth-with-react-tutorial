@@ -1,35 +1,43 @@
+# How to set up AWS auth service with React
 
-  
-# How to set up AWS auth service with React Just to begin with, AWS authentication can be achieved by using amplify cognito service, and this tutorial demonstrate how to achieve this in a React Application.    
+Just to begin with, AWS authentication can be achieved by using amplify cognito service, and this tutorial demonstrate how to achieve this in a React Application.    
     
 **Step 1: Set up amplify**    
- We are supposing to have npm installed in our machine and git bash, Cmder or any other command line tool.    
+
+We are supposing to have npm installed in our machine and git bash, Cmder or any other command line tool.    
     
 The first thing to do is to install **amplify-cli** globally which will help us to configure the project and connect it to the aws account.    
     
 This is achieved by opening the command line and run `npm i -g amplify-cli`    
- ![image - amplify-cli](images/amplify-cli.PNG)    
+
+![image - amplify-cli](images/amplify-cli.PNG)    
     
-**Step 2: Create a new React project**    
- For creating a react project we have to install a react cli by running `npm install -g cli-react`    
- ![image - react-cli](images/react-cli.PNG)    
+**Step 2: Create a new React project**
+
+For creating a react project we have to install a react cli by running `npm install -g cli-react`    
+
+![image - react-cli](images/react-cli.PNG)    
     
 And create a new React app `npx create-react-app amplify-auth-react`    
- ![image - react-new-app](images/react-new-app-1.PNG)    
+
+![image - react-new-app](images/react-new-app-1.PNG)    
     
 ![image - react-new-app](images/react-new-app-2.PNG)    
     
 With new React app in place, we are able to view it in the browser by running     
-`npm start` from the app directory and a beautiful landing page is visible from the url: `http://localhost:3000`    
- ![image - react-opened-in-browser](images/react-opened-in-browser.PNG)    
+`npm start` from the app directory and a beautiful landing page is visible from the url: `http://localhost:3000`
+
+![image - react-opened-in-browser](images/react-opened-in-browser.PNG)    
     
-**Step 3: Initialize amplify**    
- After creating a new React project we are ready to start a initialize amplify in our project, and we can do this by running `amplify init` in the root directory of our application.    
+**Step 3: Initialize amplify**   
+ 
+After creating a new React project we are ready to start a initialize amplify in our project, and we can do this by running `amplify init` in the root directory of our application.    
     
 ![image - aws-account-verify 7](images/aws-account-verify 7.PNG)    
   
 And by setting the application with the above details in the default browser we are asked to log into aws console account. After logging in we have to get back to the command line tool and hit `Enter key`  
-  ![image - aws-account-verify](images/aws-account-verify.PNG)    
+
+![image - aws-account-verify](images/aws-account-verify.PNG)    
   
 And we are asked to choose the region and username to be used  
     
@@ -39,14 +47,17 @@ We are then asked to press `Enter key` and this will open in  the default browse
     
 ![image - aws-account-verify 2](images/aws-account-verify 2.PNG)    
   
-Without changing the configuration, let's click `Next: Permissions`  
-  ![image - aws-account-verify 3](images/aws-account-verify 3.PNG)    
+Without changing the configuration, let's click `Next: Permissions`
+
+![image - aws-account-verify 3](images/aws-account-verify 3.PNG)    
   
 and  `Next: Tags`  
-  ![image - aws-account-verify 4](images/aws-account-verify 4.PNG)    
+
+![image - aws-account-verify 4](images/aws-account-verify 4.PNG)    
   
 and  `Next: Review`  
-  ![image - aws-account-verify 5](images/aws-account-verify 5.PNG)    
+
+![image - aws-account-verify 5](images/aws-account-verify 5.PNG)    
   
 And the we hit `Create user` for creating a new user.  
     
@@ -66,12 +77,14 @@ After all these steps, a folder named `amplify` is generated in the root folder 
   
 ***NB:** After setting up amplify in our project, the default region and default user details are stored in 2 files `config` and `credentials` located in `C:\Users\[User]\.aws` folder in for Windows users. This will skip the new user creation and set up the region, next time when another amplify project will be created.*  
   
-**Step 4: Set React app to use AWS auth**   
+**Step 4: Set React app to use AWS auth** 
+  
 To make the app aware of using amplify, we will need to install **aws-amplify** with `npm i aws-amplify aws-amplify-react` and set it in the `src/index.js` file by adding these lines:  
   
  ... import Amplify from 'aws-amplify';   import config from './aws-exports';    
    Amplify.configure(config);  
  ...  
+ 
 After that, we will need to make the app use the authentication service, and this is achieved thanks to the auth api. Here we will need to install it by running `amplify add auth` always inside the root folder of our application. And it will use the AWS Cognito built in Cognito service, which handles the authentication. And we are prompted to either require our users to log using `username`, `Email` , `Phone number` or `Email and Phone number`.  
   
 ![image - amplify-add-auth](images/amplify-add-auth.PNG)  
@@ -123,4 +136,5 @@ And by copying the link provided after publishing (`https://d1u40gyqxkw7xg.cloud
 ***This is how to set the Authentication using AWS Cognito service!!!***  
   
 **The project demo repo**
+
 [amplify-auth-react](https://github.com/gildniy/amplify-auth-react)
