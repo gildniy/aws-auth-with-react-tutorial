@@ -1,6 +1,8 @@
 
   
-# How to set up AWS auth service with React Just to begin with, AWS authentication can be achieved by using amplify cognito service, and this tutorial demonstrate how to achieve this in a React Application.    
+# How to set up AWS auth service with React
+
+Just to begin with, AWS authentication can be achieved by using amplify cognito service, and this tutorial demonstrate how to achieve this in a React Application.    
     
 **Step 1: Set up amplify**    
  We are supposing to have npm installed in our machine and git bash, Cmder or any other command line tool.    
