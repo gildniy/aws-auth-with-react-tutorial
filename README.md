@@ -80,10 +80,12 @@ After all these steps, a folder named `amplify` is generated in the root folder 
 **Step 4: Set React app to use AWS auth** 
   
 To make the app aware of using amplify, we will need to install **aws-amplify** with `npm i aws-amplify aws-amplify-react` and set it in the `src/index.js` file by adding these lines:  
-  
- ... import Amplify from 'aws-amplify';   import config from './aws-exports';    
-   Amplify.configure(config);  
- ...  
+
+```
+    import Amplify from 'aws-amplify';
+    import config from './aws-exports';    
+    Amplify.configure(config);
+``` 
  
 After that, we will need to make the app use the authentication service, and this is achieved thanks to the auth api. Here we will need to install it by running `amplify add auth` always inside the root folder of our application. And it will use the AWS Cognito built in Cognito service, which handles the authentication. And we are prompted to either require our users to log using `username`, `Email` , `Phone number` or `Email and Phone number`.  
   
@@ -103,7 +105,11 @@ And we hit on `Manage user pools` button and we get on the page were we have the
   
 With all these setting in place, the application is now ready to require any visitor to be authenticated in order to access it, and the only one configuration required is to go in the the `src/App.js` file, import the **withAuthenticator** method, and wrap the main app component in it:  
   
- ... import {withAuthenticator} from 'aws-amplify-react'; ... export default withAuthenticator(App);  
+```
+    import {withAuthenticator}
+    from 'aws-amplify-react';
+    export default withAuthenticator(App);
+``` 
 This way, when the app is started a beautiful Authentication (Sign in and Sign up) forms will be available before accessing the landing page we were seeing in the **Step 2**.  
   
 From these form, the user should be able to create an account, and login to access the application.  
