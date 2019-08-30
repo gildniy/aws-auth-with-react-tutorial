@@ -103,7 +103,7 @@ To verify weither the resources are created in the cloud, we can open the AWS Co
   
 ![image - manage-user-pools](images/manage-user-pools.PNG)  
   
-And we hit on `Manage user pools` button and we get on the page were we have the resources name as one we saw in when we were running **amplify push**  
+And we hit on `Manage user pools` button and we get on the page where we have the resources name as one we saw in when we were running **amplify push**  
 
 ![image - user-pools](images/user-pools.PNG)  
 
