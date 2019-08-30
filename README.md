@@ -104,6 +104,12 @@ To verify weither the resources are created in the cloud, we can open the AWS Co
 ![image - manage-user-pools](images/manage-user-pools.PNG)  
   
 And we hit on `Manage user pools` button and we get on the page were we have the resources name as one we saw in when we were running **amplify push**  
+
+![image - user-pools](images/user-pools.PNG)  
+
+and we can check details about our created User Pool,
+
+![image - user-pool-details](images/user-pool-details.PNG)  
   
 With all these setting in place, the application is now ready to require any visitor to be authenticated in order to access it, and the only one configuration required is to go in the the `src/App.js` file, import the **withAuthenticator** method, and wrap the main app component in it:  
   
